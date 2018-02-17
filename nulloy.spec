@@ -2,9 +2,9 @@ Name:          nulloy
 URL:           http://nulloy.com
 License:       GPLv3
 Summary:       Music player with a waveform progress bar
-Version:       _N_VERS_
-Release:       1
-Source:        tarball.tar.gz
+Version:       _DUMMY_
+Release:       0
+Source:        %{name}-%{version}.tar.gz
 %if 0%{?fedora_version} || 0%{?suse_version}
 BuildRequires: qt-devel gcc-c++
 %else
@@ -60,4 +60,3 @@ TagLib backend for Nulloy.
 %{_prefix}/lib/%{name}/plugins/libplugin_taglib.so
 
 %changelog
-

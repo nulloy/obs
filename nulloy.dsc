@@ -2,7 +2,7 @@ Format: 1.0
 Source: nulloy
 Binary: nulloy, nulloy-gstreamer, nulloy-taglib
 Architecture: any
-Version: _N_VERS_-1
+Version: _DUMMY_
 Maintainer: Sergey Vlasov <sergey@vlasov.me>
 Homepage: http://nulloy.com
 Standards-Version: 3.9.4
