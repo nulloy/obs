@@ -27,6 +27,8 @@ Music player with a waveform progress bar.
 %define QMAKE qmake
 %define LRELEASE lrelease
 %endif
+# provided by _service:download_url:ChangeLog:
+cp ../../SOURCES/ChangeLog .
 QMAKE=%{QMAKE} LRELEASE=%{LRELEASE} ./configure --taglib --no-update-check --prefix=%{buildroot}%{_prefix}
 make
 
