@@ -3,6 +3,7 @@ Source: nulloy
 Binary: nulloy, nulloy-gstreamer, nulloy-taglib
 Architecture: any
 Version: _DUMMY_
+DEBTRANSFORM-RELEASE: 1
 Maintainer: Sergey Vlasov <sergey@vlasov.me>
 Homepage: http://nulloy.com
 Standards-Version: 3.9.4
