@@ -1,0 +1,11 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Nulloy Music Player
+Source: https://github.com/nulloy/nulloy
+
+Files: *
+Copyright: 2010-2018 Sergey Vlasov <sergey@vlasov.me>
+License: GPL-3
+
+Files: src/skins/*
+Copyright: 2010-2018 Sergey Vlasov <sergey@vlasov.me>
+License: CC-BY-SA-3.0
