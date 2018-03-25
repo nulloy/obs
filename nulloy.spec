@@ -42,23 +42,6 @@ make install
 %{_datadir}/%{name}/i18n/*
 %{_datadir}/icons/*
 %{_datadir}/applications/%{name}.desktop
-
-%package  gstreamer
-Summary:  GStreamer backend for Nulloy
-Requires: nulloy
-%description gstreamer
-GStreamer backend for Nulloy.
-%files gstreamer
-%defattr(-,root,root)
-%{_prefix}/lib/%{name}/plugins/libplugin_gstreamer.so
-
-%package  taglib
-Summary:  TagLib backend for Nulloy
-Requires: nulloy
-%description taglib
-TagLib backend for Nulloy.
-%files taglib
-%defattr(-,root,root)
-%{_prefix}/lib/%{name}/plugins/libplugin_taglib.so
+%{_libdir}/%{name}/plugins/*
 
 %changelog

@@ -7,18 +7,6 @@ Standards-Version: 3.9.4
 
 Package: nulloy
 Architecture: any
-Depends: libqtgui4, libqt4-script, libqt4-network
-Suggests: nulloy-gstreamer, trash-cli
+Depends: libqtgui4, libqt4-script, libqt4-network, libgstreamer1.0-0, libtagc0
+Suggests: trash-cli, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly
 Description: Music player with a waveform progress bar
-
-Package: nulloy-gstreamer
-Architecture: any
-Depends: nulloy, libgstreamer1.0-0
-Suggests: gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly
-Description: GStreamer backend for Nulloy
-
-Package: nulloy-taglib
-Architecture: any
-Depends: nulloy, libtagc0
-Description: TagLib backend for Nulloy
-

@@ -1,6 +1,6 @@
 Format: 1.0
 Source: nulloy
-Binary: nulloy, nulloy-gstreamer, nulloy-taglib
+Binary: nulloy
 Architecture: any
 Version: _DUMMY_
 DEBTRANSFORM-RELEASE: 1
