@@ -5,7 +5,7 @@ build-stamp:
 	dh_testdir
 	# provided by _service:download_url:ChangeLog:
 	cp ../SOURCES/ChangeLog .
-	QMAKE=qmake-qt4 LRELEASE=lrelease-qt4 ./configure --taglib --no-update-check --prefix=/usr $(CONFIG_FLAGS)
+	QMAKE=qmake-qt4 LRELEASE=lrelease-qt4 ./configure --no-update-check --prefix=/usr $(CONFIG_FLAGS)
 	make
 	touch build-stamp
 
