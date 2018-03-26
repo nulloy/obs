@@ -5,7 +5,7 @@ Summary:       Music player with a waveform progress bar
 Version:       _DUMMY_
 Release:       0
 Source:        %{name}-%{version}.tar.gz
-%if 0%{?fedora_version} || 0%{?suse_version}
+%if 0%{?fedora_version} || 0%{?fedora} || 0%{?suse_version}
 BuildRequires: qt-devel gcc-c++
 %else
 BuildRequires: libqt-devel
@@ -16,11 +16,13 @@ BuildRoot:     %{_topdir}/%{name}-%{version}-root
 %description
 Music player with a waveform progress bar.
 
+%global debug_package %{nil}
+
 %prep
 %setup -q
 
 %build
-%if 0%{?fedora_version}
+%if 0%{?fedora_version} || 0%{?fedora}
 %define QMAKE qmake-qt4
 %define LRELEASE lrelease-qt4
 %else
@@ -42,6 +44,6 @@ make install
 %{_datadir}/%{name}/i18n/*
 %{_datadir}/icons/*
 %{_datadir}/applications/%{name}.desktop
-%{_libdir}/%{name}/plugins/*
+%{_prefix}/lib/%{name}/plugins/
 
 %changelog
