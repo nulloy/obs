@@ -3,10 +3,10 @@ Section: sound
 Priority: extra
 Maintainer: Sergey Vlasov <sergey@vlasov.me>
 Homepage: http://nulloy.com
-Standards-Version: 3.9.4
+Standards-Version: 4.1.1
 
 Package: nulloy
 Architecture: any
-Depends: libqtgui4, libqt4-script, libqt4-network, libgstreamer1.0-0, libtagc0
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Suggests: trash-cli, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly
 Description: Music player with a waveform progress bar

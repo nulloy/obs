@@ -8,7 +8,6 @@
     <param name="extract">debian.compat</param>
     <param name="extract">debian.control</param>
     <param name="extract">debian.copyright</param>
-    <param name="extract">debian.install</param>
     <param name="extract">debian.rules</param>
     <param name="extract">nulloy.dsc</param>
     <param name="extract">nulloy.spec</param>
@@ -39,5 +38,5 @@
     <param name="file">_service:tar_scm:nulloy-*.tar</param>
     <param name="compression">gz</param>
   </service>
-  <service name="set_version" />
+  <service name="set_version"/>
 </services>
