@@ -6,7 +6,7 @@
 override_dh_auto_configure:
 	# provided by _service:download_url:ChangeLog:
 	cp ../SOURCES/ChangeLog .
-	QMAKE=qmake-qt4 LRELEASE=lrelease-qt4 ./configure --no-update-check --prefix /usr $(CONFIG_FLAGS)
+	./configure --no-update-check --prefix /usr $(CONFIG_FLAGS)
 
 override_dh_auto_install:
 	dh_auto_install -- INSTALL_ROOT=$(CURDIR)/debian/nulloy

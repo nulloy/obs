@@ -2,6 +2,7 @@
   <service name="tar_scm">
     <param name="scm">git</param>
     <param name="url">https://github.com/nulloy/obs</param>
+    <param name="revision">qt5</param>
     <param name="filename">obs</param>
     <param name="versionformat">%h</param>
     <param name="extension">tar_</param>
@@ -30,6 +31,7 @@
   <service name="tar_scm">
     <param name="scm">git</param>
     <param name="url">https://github.com/nulloy/nulloy</param>
+    <param name="revision">qt5</param>
     <param name="filename">nulloy</param>
     <param name="versionformat">@PARENT_TAG@.pre@TAG_OFFSET@</param>
     <param name="parent-tag">0.8.2</param>
