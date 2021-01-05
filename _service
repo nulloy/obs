@@ -28,6 +28,11 @@
     <param name="host">static.nulloy.com</param>
     <param name="filename">debian.changelog</param>
   </service>
+  <service name="download_url">
+    <param name="path">prerelease/nulloy.obsinfo</param>
+    <param name="host">static.nulloy.com</param>
+    <param name="filename">nulloy.obsinfo</param>
+  </service>
   <service name="tar_scm">
     <param name="scm">git</param>
     <param name="url">https://github.com/nulloy/nulloy</param>
