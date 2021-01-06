@@ -27,11 +27,7 @@
     <param name="host">static.nulloy.com</param>
     <param name="filename">debian.changelog</param>
   </service>
-  <service name="download_url">
-    <param name="path">prerelease/nulloy.obsinfo</param>
-    <param name="host">static.nulloy.com</param>
-    <param name="filename">nulloy.obsinfo</param>
-  </service>
+
   <service name="tar_scm">
     <param name="scm">git</param>
     <param name="url">https://github.com/nulloy/nulloy</param>
@@ -43,5 +39,26 @@
     <param name="file">_service:tar_scm:nulloy-*.tar</param>
     <param name="compression">gz</param>
   </service>
-  <service name="set_version"/>
+
+  <service name="download_url">
+    <param name="path">prerelease/version.tar</param>
+    <param name="host">static.nulloy.com</param>
+  </service>
+  <service name="extract_file">
+    <param name="archive">_service:download_url:version.tar</param>
+    <param name="files">version-*</param>
+  </service>
+  <service name="set_version">
+    <param name="regex">_service:extract_file:version-(.*)</param>
+    <param name="file">_service:download_url:debian.changelog</param>
+    <param name="file">_service:tar_scm:nulloy.dsc</param>
+  </service>
+  <service name="set_version">
+    <param name="regex">_service:extract_file:version-(.*)-1</param>
+    <param name="file">_service:tar_scm:nulloy.spec</param>
+  </service>
+    <service name="recompress">
+    <param name="file">_service:download_url:version.tar</param>
+    <param name="compression">zstd</param>
+  </service>
 </services>
