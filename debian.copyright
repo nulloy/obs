@@ -3,9 +3,9 @@ Upstream-Name: Nulloy Music Player
 Source: https://github.com/nulloy/nulloy
 
 Files: *
-Copyright: 2010-2021 Sergey Vlasov <sergey@vlasov.me>
+Copyright: 2010-2022 Sergey Vlasov <sergey@vlasov.me>
 License: GPL-3
 
 Files: src/skins/*
-Copyright: 2010-2021 Sergey Vlasov <sergey@vlasov.me>
+Copyright: 2010-2022 Sergey Vlasov <sergey@vlasov.me>
 License: CC-BY-SA-3.0
