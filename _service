@@ -13,17 +13,17 @@
     <param name="extract">nulloy.spec</param>
   </service>
   <service name="download_url">
-    <param name="path">prerelease/ChangeLog</param>
+    <param name="path">release/ChangeLog</param>
     <param name="host">static.nulloy.com</param>
     <param name="filename">ChangeLog</param>
   </service>
   <service name="download_url">
-    <param name="path">prerelease/rpm.changelog</param>
+    <param name="path">release/rpm.changelog</param>
     <param name="host">static.nulloy.com</param>
     <param name="filename">nulloy.changes</param>
   </service>
   <service name="download_url">
-    <param name="path">prerelease/deb.changelog</param>
+    <param name="path">release/deb.changelog</param>
     <param name="host">static.nulloy.com</param>
     <param name="filename">debian.changelog</param>
   </service>
@@ -32,8 +32,7 @@
     <param name="scm">git</param>
     <param name="url">https://github.com/nulloy/nulloy</param>
     <param name="filename">nulloy</param>
-    <param name="versionformat">@PARENT_TAG@.pre@TAG_OFFSET@</param>
-    <param name="parent-tag">0.8.2</param>
+    <param name="versionformat">@PARENT_TAG@</param>
   </service>
   <service name="recompress">
     <param name="file">_service:tar_scm:nulloy-*.tar</param>
@@ -41,7 +40,7 @@
   </service>
 
   <service name="download_url">
-    <param name="path">prerelease/version.tar</param>
+    <param name="path">release/version.tar</param>
     <param name="host">static.nulloy.com</param>
   </service>
   <service name="extract_file">
