@@ -5,7 +5,7 @@ Summary:       Music player with a waveform progress bar
 Version:       _DUMMY_
 Release:       0
 Source:        %{name}-%{version}.tar.gz
-BuildRequires: gcc-c++ qt5-qtbase-devel qt5-qttools-devel qt5-qttools-static qt5-qtscript-devel qt5-qtbase-private-devel qt5-linguist gstreamer1-devel gstreamer1-plugins-base-devel zip libX11-devel taglib-devel
+BuildRequires: gcc-c++ qt5-qtbase-devel qt5-qttools-devel qt5-qttools-static qt5-qtscript-devel qt5-qtbase-private-devel qt5-linguist gstreamer1-plugins-base-devel gstreamer1-devel zip libX11-devel libxcb-devel taglib-devel
 BuildRoot:     %{_topdir}/%{name}-%{version}-root
 
 %description
